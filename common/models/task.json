@@ -1,0 +1,47 @@
+{
+  "name": "Task",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "estimate": {
+      "type": "number",
+      "default": "0"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "assignedTo": {
+      "type": "belongsTo",
+      "model": "TrecoUser",
+      "foreignKey": "trecoUserId"
+    },
+    "project": {
+      "type": "belongsTo",
+      "model": "Project",
+      "foreignKey": "projectId"
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "Comment",
+      "foreignKey": ""
+    },
+    "status": {
+      "type": "belongsTo",
+      "model": "Status",
+      "foreignKey": "statusId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
