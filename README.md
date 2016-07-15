@@ -8,4 +8,8 @@ This is an awesome project manager with loads of features.
 
 1. Clone this repo.
 2. 'cd' into your local repo folder.
-3. Invoke
+3. Invoke ~~Satan~~ npm install
+4. Wait for it...
+5. Type node . on the command line.
+6. It will tell you (hopefully) to explore the api at http://localhost:2001/explore
+7. Have fun =D
